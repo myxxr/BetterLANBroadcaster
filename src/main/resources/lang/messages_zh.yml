@@ -1,0 +1,52 @@
+# Chinese messages for BetterLANBroadcaster
+prefix: "&7[&6BetterLAN&eBroadcaster&7] "
+broadcast:
+  started: "&a局域网广播已&a&l启动&a。"
+  stopped: "&c局域网广播已&c&l停止&c。"
+  already-running: "&e局域网广播已在运行中。"
+  already-stopped: "&e局域网广播已处于停止状态。"
+  status:
+    running: "&a&l● &a运行中"
+    stopped: "&c&l○ &c已停止"
+    motd: "&7MOTD: &f{0}"
+    delay: "&7广播延迟: &f{0} 毫秒"
+    port: "&7端口: &f{0}"
+  motd-set: "&aMOTD 已更新为: &f{0}"
+  delay-set: "&a广播延迟已设置为 &f{0} 毫秒&a。"
+  port-set: "&a广播端口已设置为 &f{0}&a。"
+  port-set-auto: "&a广播端口已设置为自动获取: &f{0}&a。"
+
+config:
+  reloaded: "&a配置文件已重新加载。"
+
+debug:
+  on: "&a调试模式已启用，每次发送广播包将在控制台输出日志。"
+  off: "&c调试模式已禁用。"
+  status-on: "&a&l已启用"
+  status-off: "&7已禁用"
+  label: "&7调试模式: &f{0}"
+
+help:
+  title: "&6===== BetterLANBroadcaster 帮助 ====="
+  start: "&e/blb start &7- 启动局域网广播"
+  stop: "&e/blb stop &7- 停止局域网广播"
+  status: "&e/blb status &7- 查看广播状态"
+  setmotd: "&e/blb setmotd <MOTD> &7- 设置广播 MOTD"
+  setdelay: "&e/blb setdelay <毫秒> &7- 设置广播延迟（毫秒）"
+  setport: "&e/blb setport <端口|auto> &7- 设置广播端口（使用 auto 自动获取）"
+  debug: "&e/blb debug <on|off> &7- 开启/关闭调试模式"
+  reload: "&e/blb reload &7- 重载配置文件"
+  help: "&e/blb help &7- 显示此帮助"
+  version: "&e/blb version &7- 显示插件版本"
+  footer: "&6==================================="
+
+version:
+  line1: "&6BetterLANBroadcaster &ev{0}"
+  line2: "&7作者: &f{0}"
+  help-hint: "&7输入 &f{0} &7获取帮助"
+
+error:
+  no-permission: "&c你没有权限使用此命令。"
+  invalid-delay: "&c无效的延迟值，请输入一个正数（毫秒）。"
+  invalid-port: "&c无效的端口号，请输入 1-65535 之间的数字，或使用 auto。"
+  invalid-syntax: "&c无效的语法。用法: &f{0}"

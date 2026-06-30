@@ -1,0 +1,18 @@
+name: BetterLANBroadcaster
+version: 1.0.0
+main: com.lanmulticast.BetterLANBroadcaster
+api-version: 1.20
+description: A better plugin that broadcasts the server over LAN using multicast
+author: Immyxxr
+
+commands:
+  betterlanbroadcaster:
+    description: Main command for BetterLANBroadcaster
+    aliases: [blb]
+    usage: /<command> <start|stop|status|setmotd|setdelay|setport|debug|reload|help|version>
+    permission: betterlanbroadcaster.admin
+
+permissions:
+  betterlanbroadcaster.admin:
+    description: Allows using all BetterLANBroadcaster commands
+    default: op

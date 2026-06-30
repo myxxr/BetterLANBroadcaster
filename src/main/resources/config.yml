@@ -1,0 +1,18 @@
+# BetterLANBroadcaster Configuration
+
+# Language setting: en (English) or zh (中文)
+language: en
+
+# Debug mode: true to log each broadcast packet to console
+debug: false
+
+# MOTD displayed in the LAN server list
+motd: "A Minecraft Server"
+
+# Broadcast delay in milliseconds (1000 ms = 1 second)
+# Default: 1500 ms = 1.5 seconds (Minecraft standard)
+broadcast-delay-ms: 1500
+
+# Broadcast port: set to 0 or leave empty to auto-detect the server port
+# Set a specific port number to override auto-detection
+broadcast-port: 0

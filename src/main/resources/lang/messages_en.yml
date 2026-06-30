@@ -1,0 +1,52 @@
+# English messages for BetterLANBroadcaster
+prefix: "&7[&6BetterLAN&eBroadcaster&7] "
+broadcast:
+  started: "&aLAN multicast broadcasting &a&lstarted&a."
+  stopped: "&cLAN multicast broadcasting &c&lstopped&c."
+  already-running: "&eLAN multicast broadcasting is already running."
+  already-stopped: "&eLAN multicast broadcasting is already stopped."
+  status:
+    running: "&a&l● &aRunning"
+    stopped: "&c&l○ &cStopped"
+    motd: "&7MOTD: &f{0}"
+    delay: "&7Delay: &f{0} ms"
+    port: "&7Port: &f{0}"
+  motd-set: "&aMOTD updated to: &f{0}"
+  delay-set: "&aBroadcast delay set to &f{0} ms&a."
+  port-set: "&aBroadcast port set to &f{0}&a."
+  port-set-auto: "&aBroadcast port set to auto-detect: &f{0}&a."
+
+config:
+  reloaded: "&aConfiguration reloaded successfully."
+
+debug:
+  on: "&aDebug mode enabled. Each broadcast packet will be logged to console."
+  off: "&cDebug mode disabled."
+  status-on: "&a&lEnabled"
+  status-off: "&7Disabled"
+  label: "&7Debug: &f{0}"
+
+help:
+  title: "&6===== BetterLANBroadcaster Help ====="
+  start: "&e/blb start &7- Start LAN broadcasting"
+  stop: "&e/blb stop &7- Stop LAN broadcasting"
+  status: "&e/blb status &7- View broadcast status"
+  setmotd: "&e/blb setmotd <MOTD> &7- Set broadcast MOTD"
+  setdelay: "&e/blb setdelay <ms> &7- Set broadcast delay (milliseconds)"
+  setport: "&e/blb setport <port|auto> &7- Set broadcast port (use 'auto' for auto-detect)"
+  debug: "&e/blb debug <on|off> &7- Enable/disable debug mode"
+  reload: "&e/blb reload &7- Reload configuration"
+  help: "&e/blb help &7- Show this help"
+  version: "&e/blb version &7- Show plugin version"
+  footer: "&6==================================="
+
+version:
+  line1: "&6BetterLANBroadcaster &ev{0}"
+  line2: "&7Author: &f{0}"
+  help-hint: "&7Type &f{0} &7for help"
+
+error:
+  no-permission: "&cYou do not have permission to use this command."
+  invalid-delay: "&cInvalid delay. Please enter a positive number (milliseconds)."
+  invalid-port: "&cInvalid port. Please enter a number between 1 and 65535, or use 'auto'."
+  invalid-syntax: "&cInvalid syntax. Usage: &f{0}"
