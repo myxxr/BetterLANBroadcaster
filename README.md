@@ -77,7 +77,7 @@ broadcast-port: 0
 ## 构建
 
 ```bash
-git clone https://github.com/your-repo/BetterLANBroadcaster.git
+git clone https://github.com/myxxr/BetterLANBroadcaster.git
 cd BetterLANBroadcaster
 mvn clean package
 ```
