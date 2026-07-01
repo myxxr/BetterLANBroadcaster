@@ -1,5 +1,5 @@
 name: BetterLANBroadcaster
-version: 1.0.0
+version: 1.1.0
 main: com.lanmulticast.BetterLANBroadcaster
 api-version: 1.20
 description: A better plugin that broadcasts the server over LAN using multicast
