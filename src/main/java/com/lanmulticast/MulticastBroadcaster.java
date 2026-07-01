@@ -146,7 +146,8 @@ public class MulticastBroadcaster {
      * Builds and sends the multicast packet.
      */
     private void sendBroadcast() {
-        String payload = "[MOTD]" + motd + "[/MOTD][AD]" + port + "[/AD]";
+        String resolvedMotd = resolveMotd();
+        String payload = "[MOTD]" + resolvedMotd + "[/MOTD][AD]" + port + "[/AD]";
         byte[] message = payload.getBytes(StandardCharsets.UTF_8);
 
         if (debug) {
@@ -167,6 +168,22 @@ public class MulticastBroadcaster {
         } catch (IOException e) {
             plugin.getLogger().warning("Failed to send multicast broadcast: " + e.getMessage());
         }
+    }
+
+    /**
+     * Replaces placeholders in the MOTD template with real-time server values.
+     * <ul>
+     *   <li>{@code {online}} — current online player count</li>
+     *   <li>{@code {max}} — maximum player count</li>
+     * </ul>
+     */
+    private String resolveMotd() {
+        String resolved = motd;
+        int online = plugin.getServer().getOnlinePlayers().size();
+        int max = plugin.getServer().getMaxPlayers();
+        resolved = resolved.replace("{online}", String.valueOf(online));
+        resolved = resolved.replace("{max}", String.valueOf(max));
+        return resolved;
     }
 
     /**

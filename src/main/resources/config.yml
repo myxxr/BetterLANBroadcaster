@@ -7,6 +7,9 @@ language: en
 debug: false
 
 # MOTD displayed in the LAN server list
+# Available placeholders:
+#   {online} - current online player count
+#   {max}    - maximum player count
 motd: "A Minecraft Server"
 
 # Broadcast delay in milliseconds (1000 ms = 1 second)
